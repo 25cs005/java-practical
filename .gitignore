@@ -4,6 +4,9 @@
 # Log files
 *.log
 
+# Data persistence files
+*.dat
+
 # Package Files
 *.jar
 *.war
@@ -28,4 +31,3 @@ replay_pid*
 # OS generated files
 .DS_Store
 Thumbs.db
-

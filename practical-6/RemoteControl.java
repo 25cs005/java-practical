@@ -116,3 +116,4 @@ public class RemoteControl {
         SwitchOnRule lambdaRule = (device, hour) -> (hour >= 6 && hour <= 22);
     }
 }
+
