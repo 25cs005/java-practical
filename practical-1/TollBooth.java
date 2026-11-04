@@ -62,3 +62,4 @@ public class TollBooth {
         sc.close();
     }
 }
+

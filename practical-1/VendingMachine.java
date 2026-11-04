@@ -44,3 +44,4 @@ public class VendingMachine {
         sc.close();
     }
 }
+

@@ -69,3 +69,4 @@ public class CinemaShow {
         System.out.println("Total Booked Seats: " + CinemaShow.getTotalBooked());
     }
 }
+
