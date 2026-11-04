@@ -31,7 +31,7 @@ git add -A
 git status --porcelain | findstr "^" >nul
 if %errorlevel% equ 0 (
     echo [INFO] Committing files...
-    git commit -m "Organize Java practicals 1-5 with documentation and directory structure"
+    git commit -m "Complete Java practicals 1 to 14 with documentation and directory structure"
 ) else (
     echo [INFO] No changes to commit.
 )

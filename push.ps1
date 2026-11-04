@@ -8,7 +8,7 @@
 
 [CmdletBinding()]
 param (
-    [string]$CommitMessage = "Organize Java practicals 1-5 with documentation and directory structure"
+    [string]$CommitMessage = "Complete Java practicals 1 to 14 with documentation and directory structure"
 )
 
 $ErrorActionPreference = "Continue"
