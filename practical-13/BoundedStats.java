@@ -28,3 +28,4 @@ public class BoundedStats {
         System.out.println("Long average: " + average(c));
     }
 }
+
