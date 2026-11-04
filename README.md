@@ -1,6 +1,6 @@
-# Java Practical Lab Repository (`java-practical`)
+# Object-Oriented Programming with Java - Complete Lab Repository
 
-Comprehensive repository containing all 14 Object-Oriented Programming with Java practical lab assignments, implementations, tests, and documentation.
+Comprehensive repository containing all **Part A (Lab Practicals 1 to 14)** and **Part B (MiniBank Project Milestones 1 to 14)** for Object-Oriented Programming with Java.
 
 ---
 
@@ -9,76 +9,29 @@ Comprehensive repository containing all 14 Object-Oriented Programming with Java
 - **Student ID:** 25cs005
 - **Email:** 25cs005@charusat.edu.in
 - **GitHub:** [@25cs005](https://github.com/25cs005)
+- **Repository:** [`https://github.com/25cs005/java-practical`](https://github.com/25cs005/java-practical)
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Architecture
 
 ```text
 java-practical/
-├── practical-1/
-│   ├── VendingMachine.java      # Vending machine simulation using enum & switch expressions
-│   ├── TollBooth.java           # Toll booth simulation using records & switch expressions
-│   └── README.md
-├── practical-2/
-│   ├── Thermostat.java          # Smart thermostat with constructor chaining & static count
-│   ├── CinemaShow.java          # Cinema booking system with capacity tracking
-│   └── README.md
-├── practical-3/
-│   ├── Point.java               # Point coordinate comparison with equals() and hashCode()
-│   ├── Card.java                # Playing card duplicate detection
-│   └── README.md
-├── practical-4/
-│   ├── PasswordChecker.java     # Regex-based password strength evaluator
-│   ├── Chat.java                # Log parsing and filter using StringBuilder
-│   └── README.md
-├── practical-5/
-│   ├── ShapeDrive.java          # Polymorphic shape area calculation with abstract classes
-│   ├── Payroll.java             # Employee payroll management with instanceof checking
-│   └── README.md
-├── practical-6/
-│   ├── RemoteControl.java       # Interface default methods, anonymous class & lambda rules
-│   ├── NotificationSystem.java  # Functional interface Notifier & Urgent marker interface
-│   └── README.md
-├── practical-7/
-│   ├── FormValidator.java       # Custom annotations (@NotBlank, @MaxLength) & Reflection
-│   ├── MiniTestRunner.java      # Mini test runner executing @Run annotated methods
-│   └── README.md
-├── practical-8/
-│   ├── GuardedCalculator.java   # Exception handling, DivideByZeroException & finally block
-│   ├── Warehouse.java           # Checked exceptions: OutOfStockException & InvalidQuantity
-│   └── README.md
-├── practical-9/
-│   ├── CounterRace.java         # Race condition demonstration & synchronized counters
-│   ├── SeatBookingRace.java     # Concurrent seat booking & thread synchronization
-│   └── README.md
-├── practical-10/
-│   ├── ThreadPoolRunner.java    # ExecutorService fixed thread pool & task execution
-│   ├── ProducerConsumer.java    # Inter-thread coordination using wait() and notifyAll()
-│   └── README.md
-├── practical-11/
-│   ├── SaveLoad.java            # Object serialization & deserialization with transient fields
-│   ├── LogAnalyzer.java         # Modern Java NIO (Path, Files, BasicFileAttributes)
-│   └── README.md
-├── practical-12/
-│   ├── WordFrequency.java       # Map counting & custom Comparator frequency sorting
-│   ├── UniqueVisitors.java      # HashSet & LinkedHashSet order preservation
-│   └── README.md
-├── practical-13/
-│   ├── GenericExample.java      # Generic containers (Box<T>, Pair<A, B>) and methods
-│   ├── BoundedStats.java        # Bounded type generics (<N extends Number>)
-│   └── README.md
-├── practical-14/
-│   ├── Main.java                # Layered student management app with persistence
-│   └── README.md
-├── push.ps1                     # Automated PowerShell script to push to GitHub
-├── push.bat                     # Automated Windows batch script to push to GitHub
-└── README.md
+├── practical-1/ ... practical-14/   # PART A: Core Java Laboratory Practicals
+│   ├── *.java                       # Java source implementations
+│   └── README.md                    # Lab documentation & output
+├── minibank/                        # PART B: Semester-long MiniBank Project
+│   ├── minibank-1/ ... minibank-14/ # Iterative development milestones
+│   └── README.md                    # Full architecture & milestones guide
+├── push.ps1                         # Automated PowerShell push script
+├── push.bat                         # Automated Windows batch push script
+├── .gitignore                       # Clean Git tracking
+└── README.md                        # Master repository documentation
 ```
 
 ---
 
-## 📋 Complete Practicals Index (1 to 14)
+## 📑 Part A: Core Java Practicals Index (1 to 14)
 
 | Practical | Topics / Concepts Covered | Primary Source Files |
 | :--- | :--- | :--- |
@@ -99,41 +52,49 @@ java-practical/
 
 ---
 
-## 🚀 How to Run the Practicals
+## 🏦 Part B: MiniBank Progressive Project Index (1 to 14)
 
-Navigate to any practical directory and execute:
+| Milestone | Project Focus & Key Implementation | Source File |
+| :--- | :--- | :--- |
+| **MiniBank 1** | Project setup, `BankInfo` record, `MenuOption` enum & switch loop | [`minibank-1/MiniBank.java`](minibank/minibank-1/MiniBank.java) |
+| **MiniBank 2** | Encapsulated `Customer` & `Account` with auto ID generation | [`minibank-2/MiniBank2.java`](minibank/minibank-2/MiniBank2.java) |
+| **MiniBank 3** | `toString()`, `equals()`, `hashCode()`, static nested `Address`, `Cloneable` | [`minibank-3/MiniBank.java`](minibank/minibank-3/MiniBank.java) |
+| **MiniBank 4** | Regex `Validator`, `CommandParser`, `StatementFormatter` with `StringBuilder` | [`minibank-4/MiniBank.java`](minibank/minibank-4/MiniBank.java) |
+| **MiniBank 5** | Abstract `Account`, subclasses (`Savings`, `Current`, `FixedDeposit`) polymorphism | [`minibank-5/MiniBank5.java`](minibank/minibank-5/MiniBank5.java) |
+| **MiniBank 6** | `Transactable`, `InterestBearing`, `WithdrawRule` lambdas & `Premium` marker | [`minibank-6/MiniBank6.java`](minibank/minibank-6/MiniBank6.java) |
+| **MiniBank 7** | Custom annotations (`@Id`, `@Positive`, `@MaxLength`) & reflection validator | [`minibank-7/MiniBank7.java`](minibank/minibank-7/MiniBank7.java) |
+| **MiniBank 8** | Fault tolerance: `BankException` hierarchy, `transfer()`, `AutoCloseable` session | [`minibank-8/MiniBank8.java`](minibank/minibank-8/MiniBank8.java) |
+| **MiniBank 9** | Concurrent deposits with `AccountWorker`, synchronization race prevention | [`minibank-9/MiniBank9.java`](minibank/minibank-9/MiniBank9.java) |
+| **MiniBank 10** | `ExecutorService` thread pool, producer-consumer queue, deadlock avoidance | [`minibank-10/MiniBank10.java`](minibank/minibank-10/MiniBank10.java) |
+| **MiniBank 11** | Serialization `StatePersister`, append-only `TransactionLog`, NIO reports | [`minibank-11/MiniBank11.java`](minibank/minibank-11/MiniBank11.java) |
+| **MiniBank 12** | Storage via `HashMap`, `ArrayList`, `Comparator` sorting & `ConcurrentHashMap` | [`minibank-12/MiniBank12.java`](minibank/minibank-12/MiniBank12.java) |
+| **MiniBank 13** | Generic `Repository<T>`, dynamic reflection `@Id`, bounded generics | [`minibank-13/MiniBank13.java`](minibank/minibank-13/MiniBank13.java) |
+| **MiniBank 14** | Complete capstone layered application (`BankService`, CLI UI, batch processing) | [`minibank-14/MiniBank14.java`](minibank/minibank-14/MiniBank14.java) |
+
+---
+
+## 🚀 How to Run
+
+Navigate to any desired practical or MiniBank folder:
 
 ```bash
-# Example: Practical 11
-cd practical-11
-javac SaveLoad.java
-java SaveLoad
-
-# Example: Practical 14
+# Example: Running Part A Practical 14
 cd practical-14
 javac Main.java
 java Main
+
+# Example: Running Part B MiniBank 14 Capstone
+cd minibank/minibank-14
+javac MiniBank14.java
+java MiniBank14
 ```
 
 ---
 
 ## 🔄 Automated Git Push
 
-To automatically push this repository to GitHub under account **25cs005**:
-
-### Option 1: Using PowerShell
+To push all changes to GitHub:
 ```powershell
 .\push.ps1
 ```
-
-### Option 2: Using Command Prompt / Batch
-```cmd
-push.bat
-```
-
-### Option 3: Manual Git Commands
-```bash
-git add .
-git commit -m "Complete practicals 1 to 14 with full implementation and documentation"
-git push -u origin main
-```
+*(Or run `push.bat` or `git push origin main`)*
